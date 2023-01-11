@@ -76,6 +76,7 @@ body{
 .card__header{
     position: relative;
     padding: 30px 30px 40px;
+    
 }
 
 .card__header:after{

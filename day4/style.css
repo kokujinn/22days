@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #664aff;
+}
+
+.search-box{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box.active{
+ 
+    width: 350px;
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    background: #fff;
+    outline: none;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-box input.active{
+    opacity: 1;
+}
+
+.search-box .search-btn{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    color: #664aff;
+    top: 50%;
+    background: #fff;
+    right: 0;
+   transform: translateY(-50%);
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 22px;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.search-box .search-btn.active{
+    font-size: 20px;
+    right: 5px;
+    height: 50px;
+    width: 50px;
+    color:#fff;
+    background: #664aff;
+    line-height: 50px;
+    transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .cancel-btn{
+    color: white;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+.search-box .cancel-btn.active{
+    right: -40px;
+    transform: translateY(-50%) rotate(360deg);
+}
+
+.search-box .search-data{
+    padding-top: 7px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+.search-box .search-data.active{
+    display: none;
+}
