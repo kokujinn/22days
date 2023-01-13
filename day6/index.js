@@ -20,7 +20,7 @@ function currentSlide(n) {
 }
 function resetTimer() {
 	clearInterval(timer);
-	timer = setInterval(autoSlide, 8000);
+	timer = setInterval(autoSlide, 2000);
 }
 
 function slidefun(n) {
